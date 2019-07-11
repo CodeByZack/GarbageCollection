@@ -1,0 +1,78 @@
+/**index.wxss**/
+/* 厨余垃圾 #73d173 */
+/* 有害垃圾 #c96e59 */
+/* 其它垃圾 #8e8e8d */
+/* 可回收垃圾 #599ed1 */
+.normal-padding{
+  padding: 10px 16px;
+}
+.text-style{
+  border: 1px solid #333;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+}
+.container .typebox{
+  width: 100%;
+  padding-top: 100%;
+  background: #73d173;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+}
+.container .grid{
+  /* padding: 10px 16px; */
+}
+.container .typebox .center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.container .typebox .center .van-icon{
+  font-size: 24px;
+}
+.container .typebox .center text{
+  width: 100%;
+  display: block;
+  word-break:keep-all;       /* 不换行 */
+  white-space:nowrap;        /* 不换行 */
+}
+.container .typebox.food{
+  background: #73d173;
+}
+.container .typebox.recycle{
+  background: #599ed1;
+}
+.container .typebox.bad{
+  background: #c96e59;
+}
+.container .typebox.other{
+  background: #8e8e8d;
+}
+.container .title{
+  margin: 10px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+  border-left: 2px solid #333;
+}
+.container .title.food{
+  border-left-color: #73d173;
+}
+.container .title.recycle{
+  border-left-color: #599ed1;
+}
+.container .title.bad{
+  border-left-color: #c96e59;
+  
+}
+.container .title.other{
+  border-left-color: #8e8e8d;
+  
+}
+.container .garbage-item{
+  margin-bottom: 10px;
+}

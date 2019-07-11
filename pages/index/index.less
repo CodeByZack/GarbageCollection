@@ -1,0 +1,80 @@
+@color_food : #73d173;
+@color_bad : #c96e59;
+@color_recycle : #599ed1;
+@color_other : #8e8e8d;
+
+@padding_normal : 16px;
+
+.container{
+    .home-page{
+        margin-bottom: 50px;
+        .normal-padding{
+            padding: 10px @padding_normal;
+        }
+        .text-style{
+            border: 1px solid #333;
+            font-size: 12px;
+            border-radius: 3px;
+            text-align: center;
+        }
+        .typebox{
+            width: 100%;
+            padding-top: 100%;
+            background: @color_food;
+            border-radius: 10rpx;
+            color: #fff;
+            font-size: 12px;
+            position: relative;
+            .center{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                .van-icon{
+                    font-size: 24px;
+                }
+                text{
+                    width: 100%;
+                    display: block;
+                    word-break:keep-all;       /* 不换行 */
+                    white-space:nowrap;        /* 不换行 */
+                }
+            }
+        }
+        .title{
+            margin: 10px 16px;
+            font-weight: bold;
+            font-size: 14px;
+            padding-left: 10px;
+            border-left: 2px solid #333;
+        }
+        .garbage-item{
+            margin-bottom: 10px;
+        }
+        .typebox.food{
+            background: @color_food;
+        }
+        .typebox.recycle{
+            background: @color_recycle;
+        }
+        .typebox.bad{
+            background: @color_bad;
+        }
+        .typebox.other{
+            background: @color_other;
+        }
+        .title.food{
+            color: @color_food;
+        }
+        .title.recycle{
+            color: @color_recycle;
+        }
+        .title.bad{
+            color: @color_bad;
+        }
+        .title.other{
+            color: @color_other;
+        }
+    }
+}

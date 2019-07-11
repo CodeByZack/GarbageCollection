@@ -1,0 +1,61 @@
+.container .box1 {
+  height: 100px;
+  font-size: 24px;
+  color: #73d173;
+  text-align: center;
+  line-height: 100px;
+}
+.container .box2 {
+  padding: 16px;
+  border-bottom: 4px solid #f2f2f2;
+}
+.container .box2 .typebox {
+  width: 100%;
+  padding-top: 100%;
+  background: #73d173;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+}
+.container .box2 .typebox .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container .box2 .typebox .center .van-icon {
+  font-size: 24px;
+}
+.container .box2 .typebox .center text {
+  width: 100%;
+  display: block;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+}
+.container .box2 .desc {
+  color: #333;
+}
+.container .box2 .desc .bold {
+  font-weight: bold;
+}
+.container .box3 {
+  padding: 16px;
+}
+.container .box3 .title {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+  border-left: 4px solid #333;
+}
+.container .box3 .item {
+  margin-top: 10px;
+  padding-left: 3px;
+  background: #f3f4f6;
+  color: #727272;
+  font-size: 12px;
+  line-height: 20px;
+}

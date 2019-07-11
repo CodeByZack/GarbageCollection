@@ -1,0 +1,20 @@
+{
+  "name": "less2wxss",
+  "version": "1.0.0",
+  "description": "use less in miniprogram",
+  "main": "watch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "less",
+    "wxss"
+  ],
+  "author": "zack",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.9.0",
+    "node-watch": "^0.6.2",
+    "watch": "^1.0.2"
+  }
+}

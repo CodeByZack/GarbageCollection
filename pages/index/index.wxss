@@ -1,9 +1,16 @@
-/**index.wxss**/
-/* 厨余垃圾 #73d173 */
-/* 有害垃圾 #c96e59 */
-/* 其它垃圾 #8e8e8d */
-/* 可回收垃圾 #599ed1 */
-.container .typebox{
+.container .home-page {
+  margin-bottom: 50px;
+}
+.container .home-page .normal-padding {
+  padding: 10px 16px;
+}
+.container .home-page .text-style {
+  border: 1px solid #333;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+}
+.container .home-page .typebox {
   width: 100%;
   padding-top: 100%;
   background: #73d173;
@@ -12,34 +19,55 @@
   font-size: 12px;
   position: relative;
 }
-.container .grid{
-  padding: 10px 16px;
-}
-.container .typebox .center{
+.container .home-page .typebox .center {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.container .typebox .center .van-icon{
+.container .home-page .typebox .center .van-icon {
   font-size: 24px;
 }
-.container .typebox .center text{
+.container .home-page .typebox .center text {
   width: 100%;
   display: block;
-  word-break:keep-all;       /* 不换行 */
-  white-space:nowrap;        /* 不换行 */
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
 }
-.container .typebox.food{
+.container .home-page .title {
+  margin: 10px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+  border-left: 2px solid #333;
+}
+.container .home-page .garbage-item {
+  margin-bottom: 10px;
+}
+.container .home-page .typebox.food {
   background: #73d173;
 }
-.container .typebox.recycle{
+.container .home-page .typebox.recycle {
   background: #599ed1;
 }
-.container .typebox.bad{
+.container .home-page .typebox.bad {
   background: #c96e59;
 }
-.container .typebox.other{
+.container .home-page .typebox.other {
   background: #8e8e8d;
+}
+.container .home-page .title.food {
+  color: #73d173;
+}
+.container .home-page .title.recycle {
+  color: #599ed1;
+}
+.container .home-page .title.bad {
+  color: #c96e59;
+}
+.container .home-page .title.other {
+  color: #8e8e8d;
 }

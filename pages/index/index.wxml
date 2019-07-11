@@ -10,9 +10,9 @@
     bind:search="onSearch">
     <view slot="action" bind:tap="onSearch">搜索</view>
   </van-search>
-  <van-row gutter="20" custom-class="grid">
+  <van-row gutter="20" custom-class="normal-padding">
     <van-col span="6" class="typebox">
-      <view class="typebox food">
+      <view class="typebox food" bindtap="jumpDetail" data-type="1">
         <view class='center'>
           <van-icon name="shop-o" />
           <text>厨余垃圾</text>
@@ -20,7 +20,7 @@
       </view>
     </van-col>
     <van-col span="6" class="typebox">
-      <view class="typebox recycle">
+      <view class="typebox recycle" bindtap="jumpDetail" data-type="2">
         <view class='center'>
           <van-icon name="shop-o" />
           <text>可回收垃圾</text>
@@ -28,7 +28,7 @@
       </view>
     </van-col>
     <van-col span="6" class="typebox">
-      <view class="typebox bad">
+      <view class="typebox bad" bindtap="jumpDetail" data-type="3">
         <view class='center'>
           <van-icon name="shop-o" />
           <text>有害垃圾</text>
@@ -36,12 +36,48 @@
       </view>
     </van-col>
     <van-col span="6" class="typebox">
-      <view class="typebox other">
+      <view class="typebox other" bindtap="jumpDetail" data-type="4">
         <view class='center'>
           <van-icon name="shop-o" />
           <text>其它垃圾</text>
         </view>
       </view>
+    </van-col>
+  </van-row>
+
+  <view class="title food">
+    常见餐余垃圾
+  </view>
+  <van-row gutter="20" custom-class="normal-padding">
+    <van-col span="6" wx:for="{{list}}"  bindtap="jumpDetail" data-type="1" data-keyword="{{item}}" custom-class="garbage-item">
+      <view class="text-style">{{item}}</view>
+    </van-col>
+  </van-row>
+  
+  <view class="title recycle">
+    常见可回收物
+  </view>
+  <van-row gutter="20" custom-class="normal-padding">
+    <van-col span="6" wx:for="{{list}}"  bindtap="jumpDetail" data-type="2" data-keyword="{{item}}" custom-class="garbage-item">
+      <view class="text-style">{{item}}</view>
+    </van-col>
+  </van-row>
+
+  <view class="title bad">
+    常见有害垃圾
+  </view>
+  <van-row gutter="20" custom-class="normal-padding">
+    <van-col span="6" wx:for="{{list}}"  bindtap="jumpDetail" data-type="3" data-keyword="{{item}}" custom-class="garbage-item">
+      <view class="text-style">{{item}}</view>
+    </van-col>
+  </van-row>
+
+  <view class="title other">
+    常见其它垃圾
+  </view>
+  <van-row gutter="20" custom-class="normal-padding">
+    <van-col span="6" wx:for="{{list}}"  bindtap="jumpDetail" data-type="4" data-keyword="{{item}}" custom-class="garbage-item">
+      <view class="text-style">{{item}}</view>
     </van-col>
   </van-row>
 
