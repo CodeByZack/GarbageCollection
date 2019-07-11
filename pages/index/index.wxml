@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="container">
+
+<view wx:if="{{active === 0}}" class='home-page'>
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:change="onChange"
+    bind:search="onSearch">
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+  <van-row gutter="20" custom-class="grid">
+    <van-col span="6" class="typebox">
+      <view class="typebox food">
+        <view class='center'>
+          <van-icon name="shop-o" />
+          <text>厨余垃圾</text>
+        </view>
+      </view>
+    </van-col>
+    <van-col span="6" class="typebox">
+      <view class="typebox recycle">
+        <view class='center'>
+          <van-icon name="shop-o" />
+          <text>可回收垃圾</text>
+        </view>
+      </view>
+    </van-col>
+    <van-col span="6" class="typebox">
+      <view class="typebox bad">
+        <view class='center'>
+          <van-icon name="shop-o" />
+          <text>有害垃圾</text>
+        </view>
+      </view>
+    </van-col>
+    <van-col span="6" class="typebox">
+      <view class="typebox other">
+        <view class='center'>
+          <van-icon name="shop-o" />
+          <text>其它垃圾</text>
+        </view>
+      </view>
+    </van-col>
+  </van-row>
+
+</view>
+
+<view wx:elif="{{active === 1}}"  class='qa-page'>
+  qa
+</view>
+
+
+<van-tabbar active="{{ active }}" bind:change="onTabChange">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="records">问答</van-tabbar-item>
+</van-tabbar>
+</view>
