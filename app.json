@@ -20,6 +20,8 @@
     "van-col": "/lib/col/index",
     "van-icon": "/lib/icon/index",
     "van-cell": "/lib/cell/index",
-    "van-loading": "/lib/loading/index"
+    "van-loading": "/lib/loading/index",
+    "van-notice-bar": "/lib/notice-bar/index",
+    "van-popup": "/lib/popup/index"
   }
 }

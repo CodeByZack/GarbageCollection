@@ -74,3 +74,54 @@
 .container .home-page .title.other {
   color: #8e8e8d;
 }
+.container .qa-page {
+  position: relative;
+  background: #F8F8F8;
+}
+.container .qa-page .list {
+  margin-bottom: 50px;
+}
+.container .qa-page .list .item {
+  display: flex;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+}
+.container .qa-page .list .item .avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.container .qa-page .list .item .title {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+.container .qa-page .list .item .van-icon {
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+  font-size: 12px;
+}
+.container .qa-page .list .item .comments {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.container .qa-page .list .item .time {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.container .qa-page .new-question {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+}
+.container .qa-page .new-question .icon {
+  color: #fff;
+  background: #147BDF;
+  border-radius: 50%;
+  padding: 10px;
+}
