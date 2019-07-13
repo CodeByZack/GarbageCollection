@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+
+<view class="container">
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:change="onChange"
+    bind:search="onSearch">
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+  
+  <van-cell wx:for="{{result}}" 
+  title="{{item.name}}" 
+  value="{{item.type}}" 
+  bindtap="jumpDetail" data-type="{{item.type}}" data-keyword="{{item.name}}"
+  />
+  <van-cell title="单元格" value="内容" />
+</view>

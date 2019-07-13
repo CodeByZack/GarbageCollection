@@ -11,13 +11,13 @@ Page({
     console.log(options)
     let { type, keyword }  = options;
     wx.setNavigationBarTitle({
-      title: constant.names[type-1]
+      title: constant.names[type]
     })
     this.setData({
       type,
       keyword,
       constant,
-      iconBgColor : constant.colors[type-1]
+      iconBgColor : constant.colors[type]
     })
   },
 

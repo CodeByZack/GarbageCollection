@@ -9,6 +9,9 @@
   font-size: 12px;
   border-radius: 3px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container .home-page .typebox {
   width: 100%;

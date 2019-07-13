@@ -9,11 +9,20 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.4",
-	"appid": "wx2d1c3fbf70aaa705",
+	"appid": "wx58c8b37ddca8a5f5",
 	"projectname": "GarbageCollection",
 	"debugOptions": {
 		"hidedInDevtools": []

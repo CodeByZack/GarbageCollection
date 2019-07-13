@@ -1,7 +1,7 @@
 <!--pages/detail/detail.wxml-->
 <view class="container">
-  <view wx:if="{{keyword}}"  class="box1">
-    {{keyword}} 属于 {{ constant.names[type-1] }}
+  <view wx:if="{{keyword != 'undefined'}}"  class="box1">
+    {{ keyword }} 属于 {{ constant.names[type] }}
   </view>
   <view class="box2">
     <van-row gutter="10" custom-class="normal-padding">
@@ -9,13 +9,13 @@
         <view class="typebox" style="background-color:{{iconBgColor}}">
           <view class='center'>
             <van-icon name="shop-o" />
-            <text>{{ constant.names[type-1] }}</text>
+            <text>{{ constant.names[type] }}</text>
           </view>
         </view>
       </van-col>
       <van-col span="18" custom-class="desc">
-        <text class="bold">{{ constant.names[type-1] }}</text>
-        {{ constant.desc[type-1] }}
+        <text class="bold">{{ constant.names[type] }}</text>
+        {{ constant.desc[type] }}
       </van-col>
     </van-row>
   </view>
@@ -23,7 +23,7 @@
     <view class="title food">
       投放要求
     </view>
-    <view class="item" wx:for="{{ constant.rules[type-1] }}">
+    <view class="item" wx:key="{{index}}"  wx:for="{{ constant.rules[type] }}">
       {{index+1}}.{{item}}
     </view>
   </view>

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,6 +18,7 @@
     "van-search": "/lib/search/index",
     "van-row": "/lib/row/index",
     "van-col": "/lib/col/index",
-    "van-icon": "/lib/icon/index"
+    "van-icon": "/lib/icon/index",
+    "van-cell": "/lib/cell/index"
   }
 }
