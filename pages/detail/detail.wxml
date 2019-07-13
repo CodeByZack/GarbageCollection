@@ -1,7 +1,9 @@
 <!--pages/detail/detail.wxml-->
 <view class="container">
-  <view wx:if="{{keyword != 'undefined'}}"  class="box1">
-    {{ keyword }} 属于 {{ constant.names[type] }}
+  <view   class="box1">
+    <view wx:if="{{keyword != 'undefined'}}">{{ keyword }}</view>
+    <view wx:if="{{keyword != 'undefined'}}">属于</view>
+    <view>{{ constant.names[type] }}</view>
   </view>
   <view class="box2">
     <van-row gutter="10" custom-class="normal-padding">

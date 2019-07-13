@@ -19,6 +19,7 @@
     "van-row": "/lib/row/index",
     "van-col": "/lib/col/index",
     "van-icon": "/lib/icon/index",
-    "van-cell": "/lib/cell/index"
+    "van-cell": "/lib/cell/index",
+    "van-loading": "/lib/loading/index"
   }
 }
