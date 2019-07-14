@@ -1,0 +1,61 @@
+.container {
+  background: #f2f2f2;
+}
+.container .question {
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container .question .avatar {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.container .question .name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.container .question .content {
+  text-align: left;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.container .answer-list .item {
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.container .answer-list .item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.container .answer-list .item .box {
+  flex: 1;
+}
+.container .answer-list .item .box .name {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.container .answer-list .item .box .content {
+  color: #333;
+  font-size: 14px;
+}
+.container .answer-list .item .time {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.container .reply {
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

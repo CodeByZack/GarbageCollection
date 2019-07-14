@@ -52,6 +52,18 @@ Page({
     console.log("---------------")
   },
   onClose: function(){
-    this.setData({show:false})
+    this.setData({show:false,value:""})
+  },
+  onConfirm: function(){
+    console.log(this.data.value)
+  },
+  handleInput: function(e){
+    console.log(e)
+    this.setData({value:e.detail.value})
+  },
+  showQuestion:function(e){
+    wx.navigateTo({
+      url: `/pages/questionDetail/questionDetail`
+    })
   }
 })

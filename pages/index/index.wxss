@@ -125,3 +125,41 @@
   border-radius: 50%;
   padding: 10px;
 }
+.container .qa-page .enter-question-bg {
+  width: 85%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 4px;
+}
+.container .qa-page .enter-question-bg .title {
+  padding-top: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.container .qa-page .enter-question-bg .input {
+  width: 82%;
+  padding: 25px;
+  height: 2em;
+}
+.container .qa-page .enter-question-bg .textarea-placeholder {
+  color: #8e8e8d;
+}
+.container .qa-page .enter-question-bg .btns {
+  display: flex;
+  border-top: 1px solid #f2f2f2;
+}
+.container .qa-page .enter-question-bg .btns .cancel {
+  flex: 1;
+  line-height: 40px;
+  text-align: center;
+}
+.container .qa-page .enter-question-bg .btns .diveder {
+  width: 1px;
+  background: #f2f2f2;
+  height: 40px;
+}
+.container .qa-page .enter-question-bg .btns .confirm {
+  line-height: 40px;
+  flex: 1;
+  text-align: center;
+}

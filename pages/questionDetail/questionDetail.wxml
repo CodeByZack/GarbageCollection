@@ -1,0 +1,42 @@
+<!--pages/questionDetail/questionDetail.wxml-->
+<view class="container">
+  <view class="question">
+    <image class="avatar" src="http://static.699pic.com/images/activeimg/5d253f8b5b1fc.jpg!/both/317x216"></image>
+    <view class="name">这里是名字</view>
+    <view>
+      <view class="content">这里是问题内容，你是什么垃圾？</view>
+    </view>
+  </view>
+  <view class="answer-list">
+    <view class="item">
+      <image class="avatar" src="http://static.699pic.com/images/activeimg/5d253f8b5b1fc.jpg!/both/317x216"></image>
+      <view class="box">
+        <view class="name">名字</view>
+        <view class="content">这里是内容太</view>
+      </view>
+      <view class="time">一天前</view>
+    </view>
+        <view class="item">
+      <image class="avatar" src="http://static.699pic.com/images/activeimg/5d253f8b5b1fc.jpg!/both/317x216"></image>
+      <view class="box">
+        <view class="name">名字</view>
+        <view class="content">这里是内容太</view>
+      </view>
+      <view class="time">一天前</view>
+    </view>
+  </view>
+  <view class="reply">
+    <van-cell-group>
+      <van-field
+        value="{{ sms }}"
+        center
+        clearable
+        placeholder="在这里回复他"
+        border="{{ false }}"
+        use-button-slot
+      >
+        <van-button slot="button" size="small" type="primary">提交</van-button>
+      </van-field>
+    </van-cell-group>
+  </view>
+</view>

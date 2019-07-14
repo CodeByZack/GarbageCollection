@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/detail",
     "pages/logs/logs",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/questionDetail/questionDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,6 +23,8 @@
     "van-cell": "/lib/cell/index",
     "van-loading": "/lib/loading/index",
     "van-notice-bar": "/lib/notice-bar/index",
-    "van-popup": "/lib/popup/index"
+    "van-popup": "/lib/popup/index",
+    "van-field": "/lib/field/index",
+    "van-button": "/lib/button/index"
   }
 }

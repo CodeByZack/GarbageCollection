@@ -88,7 +88,7 @@
   text="没有搜索到的关键词，都可以在这提问，万能的网友可以帮助到你！"
   />
   <view class="list">
-    <view class="item" wx:for="{{questions}}">
+    <view class="item" bindtap="showQuestion" wx:for="{{questions}}">
       <image class="avatar" src="http://static.699pic.com/images/activeimg/5d253f8b5b1fc.jpg!/both/317x216"></image>
       <view style="flex:1;">
         <view class="title">这里问题内容，你是什么垃圾？这里问题内容，你是什么垃圾？</view>
@@ -105,7 +105,19 @@
       </view>
     </view>
   </view>
-  <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+  <van-popup show="{{ show }}" bind:close="onClose" custom-class="enter-question-bg">
+    <view class="enter-question-content">
+      <view class="title">
+      发起提问
+      </view>
+      <textarea class="input" value="{{value}}" bindinput="handleInput" placeholder-style="color:#f0f0f0" placeholder="在这里输入你的问题" auto-focus="true"/>
+      <view class="btns">
+        <text bindtap="onClose" class="cancel">取消</text>
+        <view class="diveder"/>
+        <text bindtap="onConfirm" class="confirm">确定</text>
+      </view>
+    </view>
+  </van-popup>
   <view class="new-question" bindtap="addNewQuestion">
     <van-icon custom-class="icon" size="20px" name="plus"/>
   </view>
